@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperOS Low-End Web</title>
+    <link rel="stylesheet" href="stylelite.css">
+</head>
+<body>
+    <div id="loading-screen" class="screen">
+        <p>Loading HyperOS Low-End Website...</p>
+    </div>
+
+    <div id="lock-screen" class="screen hidden">
+        <div id="time"></div>
+        <div id="lock-swipe-area">Swipe to unlock</div>
+    </div>
+
+    <div id="home-screen" class="screen hidden">
+        <div class="app-grid">
+            <div class="app-icon" data-app="photos">
+                <img src="assets/icon1.png" alt="Photos">
+                <span>Photos</span>
+            </div>
+            <div class="app-icon" data-app="settings">
+                <img src="assets/icon2.png" alt="Settings">
+                <span>Settings</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="photos-app" class="app-window">
+        <div class="app-content">
+            <p>None</p>
+        </div>
+        <button class="close-btn">Close</button>
+    </div>
+
+    <div id="settings-app" class="app-window">
+        <div class="app-content">
+            <p>HyperOS Web by TuxGuy</p>
+        </div>
+        <button class="close-btn">Close</button>
+    </div>
+
+    <script src="scriptlite.js"></script>
+</body>
+</html>
